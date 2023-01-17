@@ -15,6 +15,7 @@ public class TestBase {
 		WebDriverManager.chromedriver().setup();
 	    driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		driver.get(ReadData.readPropertyFile("url"));
 		//driver.get("https://www.saucedemo.com/");
 		
