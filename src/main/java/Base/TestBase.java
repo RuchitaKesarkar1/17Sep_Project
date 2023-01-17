@@ -1,7 +1,5 @@
 package Base;
 
-import java.io.Reader;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -19,6 +17,7 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.get(ReadData.readPropertyFile("url"));
 		//driver.get("https://www.saucedemo.com/");
+		
 	}
 	
 	
